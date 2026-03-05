@@ -143,7 +143,7 @@ const education = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
-      <header className="sticky top-0 z-20 border-b border-slate-200/60 bg-[var(--background)]/80 backdrop-blur dark:border-slate-800/80">
+      <header className="sticky top-0 z-20 border-b border-slate-200/70 bg-white/75 shadow-[0_1px_0_rgba(148,163,184,0.18)] backdrop-blur dark:border-slate-800/80 dark:bg-[var(--background)]/80 dark:shadow-none">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <a href="#top" className="text-sm font-semibold tracking-wide text-slate-700 dark:text-slate-200">
             Milan Patel
@@ -160,7 +160,7 @@ export default function Home() {
             <a
               href="/Milan-Patel-Resume.pdf"
               download
-              className="hidden rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 dark:bg-sky-700 dark:hover:bg-sky-600 md:inline-flex"
+              className="hidden rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-4 py-2 text-xs font-semibold text-white shadow-[0_10px_24px_-14px_rgba(14,165,233,0.9)] transition hover:-translate-y-0.5 hover:from-sky-500 hover:to-cyan-400 dark:bg-none dark:bg-sky-700 dark:shadow-none dark:hover:bg-sky-600 md:inline-flex"
             >
               Download Resume
             </a>
@@ -170,10 +170,10 @@ export default function Home() {
       </header>
 
       <main id="top" className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 py-12 sm:px-6 lg:gap-16 lg:px-8 lg:py-16">
-        <section className="animate-fade-up relative overflow-hidden rounded-3xl border border-slate-200/70 bg-[#f8fbff] p-6 shadow-sm dark:border-slate-800 dark:bg-[#020925] lg:p-10">
+        <section className="animate-fade-up relative overflow-hidden rounded-3xl border border-slate-200/70 bg-gradient-to-br from-white via-sky-50/75 to-indigo-50/70 p-6 shadow-sm dark:border-slate-800 dark:bg-none dark:bg-[#020925] lg:p-10">
           <div className="animate-float pointer-events-none absolute -left-20 top-10 h-56 w-56 rounded-full bg-sky-300/30 blur-3xl dark:bg-violet-700/20" />
           <div className="animate-float pointer-events-none absolute -right-20 -top-12 h-64 w-64 rounded-full bg-indigo-300/30 blur-3xl [animation-delay:350ms] dark:bg-indigo-700/20" />
-          <div className="pointer-events-none absolute inset-0 opacity-60 [background-image:linear-gradient(rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.12)_1px,transparent_1px)] [background-size:34px_34px] dark:opacity-25" />
+          <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.12)_1px,transparent_1px)] [background-size:34px_34px] dark:opacity-25" />
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_48%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.14),transparent_36%)] dark:bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.2),transparent_50%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.16),transparent_40%)]" />
 
           <div className="relative grid items-start gap-10 lg:grid-cols-[1.35fr_1fr]">
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <a
                   href="mailto:mp890520@gmail.com"
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_30px_-12px_rgba(14,165,233,0.9)] transition hover:-translate-y-0.5 hover:from-sky-500 hover:to-cyan-400"
+                  className="inline-flex items-center rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_30px_-12px_rgba(14,165,233,0.9)] transition hover:-translate-y-0.5 hover:from-sky-500 hover:to-cyan-400 dark:bg-none dark:bg-sky-700 dark:shadow-none dark:hover:bg-sky-600"
                 >
                   Start a conversation
                 </a>
@@ -221,15 +221,15 @@ export default function Home() {
               </div>
 
               <div className="grid gap-3 sm:grid-cols-3">
-                <div className="card-soft rounded-xl border border-slate-200/80 bg-white/80 p-3 dark:border-slate-700 dark:bg-slate-800/65">
+                <div className="card-soft rounded-xl border border-slate-200/90 bg-white/92 p-3 dark:border-slate-700 dark:bg-slate-800/65">
                   <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">5+ Years</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">Industry Experience</p>
                 </div>
-                <div className="card-soft rounded-xl border border-slate-200/80 bg-white/80 p-3 dark:border-slate-700 dark:bg-slate-800/65">
+                <div className="card-soft rounded-xl border border-slate-200/90 bg-white/92 p-3 dark:border-slate-700 dark:bg-slate-800/65">
                   <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">SaaS + Realtime</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">Systems I Build</p>
                 </div>
-                <div className="card-soft rounded-xl border border-slate-200/80 bg-white/80 p-3 dark:border-slate-700 dark:bg-slate-800/65">
+                <div className="card-soft rounded-xl border border-slate-200/90 bg-white/92 p-3 dark:border-slate-700 dark:bg-slate-800/65">
                   <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">US + India</p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">Global Collaboration</p>
                 </div>
@@ -237,7 +237,7 @@ export default function Home() {
             </div>
 
             <div className="mx-auto w-full max-w-[360px] space-y-4">
-              <div className="card-soft relative overflow-hidden rounded-2xl border border-slate-200/70 bg-white/85 p-2 dark:border-slate-700 dark:bg-slate-900/70">
+              <div className="card-soft relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-2 dark:border-slate-700 dark:bg-slate-900/70">
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-sky-100/70 to-transparent dark:from-sky-900/30" />
                 <Image
                   src="/profile-photo.png"
@@ -248,7 +248,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="card-soft rounded-2xl border border-slate-200/70 bg-white/85 p-4 dark:border-slate-700 dark:bg-slate-900/70">
+              <div className="card-soft rounded-2xl border border-slate-200/90 bg-white/95 p-4 dark:border-slate-700 dark:bg-slate-900/70">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">Current Focus</p>
                 <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
                   M.S. in Computer Science at Rowan University while building production-ready software solutions.
