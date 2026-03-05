@@ -43,9 +43,9 @@ export default function ThemeToggle() {
       type="button"
       aria-label="Toggle color theme"
       onClick={handleToggle}
-      className="inline-flex items-center gap-2 rounded-full border border-slate-300/60 bg-white/70 px-4 py-2 text-sm font-medium text-slate-700 backdrop-blur transition hover:bg-white dark:border-slate-700/70 dark:bg-slate-900/60 dark:text-slate-100 dark:hover:bg-slate-900"
+      className="inline-flex h-9 items-center gap-1.5 rounded-full border border-slate-300/90 bg-white/80 px-3.5 text-xs font-semibold text-slate-700 backdrop-blur transition hover:bg-slate-100 dark:border-slate-700/70 dark:bg-slate-900/70 dark:text-slate-100 dark:hover:bg-slate-800"
     >
-      <span className="text-base" aria-hidden="true">
+      <span className="text-sm leading-none" aria-hidden="true">
         {theme === THEMES.DARK ? "☀" : "☾"}
       </span>
       {theme === THEMES.DARK ? "Light Mode" : "Dark Mode"}

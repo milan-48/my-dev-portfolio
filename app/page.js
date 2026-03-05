@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import CareerJourney from "../components/career-journey";
 import ImpactCarousel from "../components/impact-carousel";
+import ScrollProgress from "../components/scroll-progress";
 import ThemeToggle from "../components/theme-toggle";
 
 const displayFont = Plus_Jakarta_Sans({
@@ -143,30 +144,42 @@ const education = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
-      <header className="sticky top-0 z-20 border-b border-slate-200/70 bg-white/75 shadow-[0_1px_0_rgba(148,163,184,0.18)] backdrop-blur dark:border-slate-800/80 dark:bg-[var(--background)]/80 dark:shadow-none">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="#top" className="text-sm font-semibold tracking-wide text-slate-700 dark:text-slate-200">
+      <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/88 backdrop-blur-md dark:border-slate-800/80 dark:bg-[#020617]/85">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          <a href="#top" className="text-base font-semibold tracking-tight text-slate-800 dark:text-slate-100">
             Milan Patel
           </a>
-          <div className="flex items-center gap-3">
+          <nav className="hidden items-center gap-6 md:flex">
+            <a href="#impact" className="text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100">
+              Impact
+            </a>
+            <a href="#journey" className="text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100">
+              Journey
+            </a>
+            <a href="#contact" className="text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-slate-100">
+              Contact
+            </a>
+          </nav>
+          <div className="flex items-center gap-2">
             <a
               href="https://www.linkedin.com/in/milan48/"
               target="_blank"
               rel="noreferrer"
-              className="hidden rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800 sm:inline-flex"
+              className="hidden h-9 items-center rounded-full border border-slate-300/90 bg-white/80 px-3.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-200 dark:hover:bg-slate-800 sm:inline-flex"
             >
               LinkedIn
             </a>
             <a
               href="/Milan-Patel-Resume.pdf"
               download
-              className="hidden rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-4 py-2 text-xs font-semibold text-white shadow-[0_10px_24px_-14px_rgba(14,165,233,0.9)] transition hover:-translate-y-0.5 hover:from-sky-500 hover:to-cyan-400 dark:bg-none dark:bg-sky-700 dark:shadow-none dark:hover:bg-sky-600 md:inline-flex"
+              className="hidden h-9 items-center rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-3.5 text-xs font-semibold text-white shadow-[0_10px_24px_-14px_rgba(14,165,233,0.9)] transition hover:-translate-y-0.5 hover:from-sky-500 hover:to-cyan-400 dark:bg-none dark:bg-sky-700 dark:shadow-none dark:hover:bg-sky-600 md:inline-flex"
             >
               Download Resume
             </a>
             <ThemeToggle />
           </div>
         </div>
+        <ScrollProgress />
       </header>
 
       <main id="top" className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 py-12 sm:px-6 lg:gap-16 lg:px-8 lg:py-16">
@@ -288,7 +301,7 @@ export default function Home() {
           ))}
         </section>
 
-        <section className="animate-fade-up space-y-6 [animation-delay:120ms]">
+        <section id="impact" className="animate-fade-up space-y-6 [animation-delay:120ms]">
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Selected Impact</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Highlights across streaming infrastructure, data platform modernization, and enterprise automation.
@@ -296,7 +309,7 @@ export default function Home() {
           <ImpactCarousel items={highlights} />
         </section>
 
-        <section className="animate-fade-up space-y-6 [animation-delay:160ms]">
+        <section id="journey" className="animate-fade-up space-y-6 [animation-delay:160ms]">
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Career Journey</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Click any card to view detailed achievements from each role.
@@ -351,7 +364,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="animate-fade-up relative overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-6 [animation-delay:240ms] dark:border-slate-800 dark:bg-slate-900/80">
+        <section id="contact" className="animate-fade-up relative overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-6 [animation-delay:240ms] dark:border-slate-800 dark:bg-slate-900/80">
           <div className="pointer-events-none absolute -right-14 top-0 h-36 w-36 rounded-full bg-sky-100/80 blur-3xl dark:bg-sky-900/30" />
           <div className="relative grid gap-5 md:grid-cols-[1.4fr_1fr] md:items-end">
             <div>

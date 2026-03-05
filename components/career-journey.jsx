@@ -66,7 +66,7 @@ export default function CareerJourney({ items }) {
                 </span>
               ))}
             </div>
-            <div className="mt-auto inline-flex items-center gap-1.5 border-t border-slate-200/70 pt-4 text-xs font-semibold text-sky-700 transition group-hover:gap-2 dark:border-slate-800 dark:text-sky-300">
+            <div className="mt-auto inline-flex items-center gap-1.5 pt-5 text-xs font-semibold text-sky-700 transition group-hover:gap-2 dark:text-sky-300">
               <span>View details</span>
               <svg
                 aria-hidden="true"
