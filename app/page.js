@@ -301,7 +301,7 @@ export default function Home() {
           ))}
         </section>
 
-        <section id="impact" className="animate-fade-up space-y-6 [animation-delay:120ms]">
+        <section id="impact" className="scroll-mt-24 animate-fade-up space-y-6 [animation-delay:120ms]">
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Selected Impact</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Highlights across streaming infrastructure, data platform modernization, and enterprise automation.
@@ -309,7 +309,7 @@ export default function Home() {
           <ImpactCarousel items={highlights} />
         </section>
 
-        <section id="journey" className="animate-fade-up space-y-6 [animation-delay:160ms]">
+        <section id="journey" className="scroll-mt-24 animate-fade-up space-y-6 [animation-delay:160ms]">
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Career Journey</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Click any card to view detailed achievements from each role.
@@ -364,7 +364,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section id="contact" className="animate-fade-up relative overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-6 [animation-delay:240ms] dark:border-slate-800 dark:bg-slate-900/80">
+        <section id="contact" className="scroll-mt-24 animate-fade-up relative overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-6 [animation-delay:240ms] dark:border-slate-800 dark:bg-slate-900/80">
           <div className="pointer-events-none absolute -right-14 top-0 h-36 w-36 rounded-full bg-sky-100/80 blur-3xl dark:bg-sky-900/30" />
           <div className="relative grid gap-5 md:grid-cols-[1.4fr_1fr] md:items-end">
             <div>
