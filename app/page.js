@@ -1,14 +1,17 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import CareerJourney from "../components/career-journey";
-import ImpactCarousel from "../components/impact-carousel";
 import ScrollProgress from "../components/scroll-progress";
 import ThemeToggle from "../components/theme-toggle";
 
 const displayFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
+  display: "swap",
 });
+
+const ImpactCarousel = dynamic(() => import("../components/impact-carousel"), { ssr: true });
+const CareerJourney = dynamic(() => import("../components/career-journey"), { ssr: true });
 
 const highlights = [
   {
