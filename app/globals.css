@@ -34,7 +34,7 @@ body {
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   scrollbar-gutter: stable;
 }
 
